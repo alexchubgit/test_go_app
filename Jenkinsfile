@@ -5,6 +5,7 @@ pipeline {
       agent any
       steps {
         echo 'Build'
+        sh 'go build'
       }
     }
 
