@@ -6,6 +6,7 @@ pipeline {
       steps {
         echo 'Build'
         sh 'whoami'
+        dockerNode(image: 'golang:1.16-alpine')
       }
     }
 
