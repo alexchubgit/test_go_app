@@ -1,13 +1,13 @@
 pipeline {
-  agent any 
+  agent any
   stages {
     stage('Bulid') {
-      agent any 
+      agent any
       steps {
         echo 'Build'
         sh 'whoami'
-      }   
-    }   
+      }
+    }
 
   }
 }
