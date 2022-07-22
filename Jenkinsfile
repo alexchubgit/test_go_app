@@ -9,7 +9,10 @@ pipeline {
     stage('Bulid') {
       steps {
         echo 'Build'
-        dir(path: '/etc')
+        dir(path: '/etc') {
+          sh 'sh "pwd"'
+        }
+
       }
     }
 
