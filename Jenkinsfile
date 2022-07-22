@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'golang:1.16-alpine'
+    }
+
+  }
   stages {
     stage('Bulid') {
       steps {
