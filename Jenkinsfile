@@ -9,7 +9,6 @@ pipeline {
     stage('Bulid') {
       steps {
         echo 'Build'
-        sh 'whoami'
       }
     }
 
