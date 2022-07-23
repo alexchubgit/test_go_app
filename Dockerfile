@@ -1,8 +1,12 @@
 FROM golang:1.16-alpine
 
-WORKDIR /app
+RUN go build
 
-COPY go.mod ./
-COPY go.sum ./
-RUN go mod download
+ENV APP_HOME /app
+RUN mkdir -p "$APP_HOME"
 
+WORKDIR "$APP_HOME"
+
+EXPOSE 8081
+
+CMD ["main", "run"]
