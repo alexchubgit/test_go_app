@@ -7,6 +7,9 @@ RUN mkdir -p "$APP_HOME"
 
 WORKDIR "$APP_HOME"
 
+COPY go.* ./
+RUN go mod download
+
 EXPOSE 8081
 
 CMD ["main", "run"]
