@@ -10,7 +10,7 @@ pipeline {
       steps {
         echo 'Build'
         sh 'id'
-        sh 'ping 8.8.8.8'
+        sh 'ping -c 4 8.8.8.8'
       }
     }
 
