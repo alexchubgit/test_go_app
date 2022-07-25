@@ -6,7 +6,7 @@ pipeline {
 
   }
   stages {
-    stage('Bulid') {
+    stage('Build') {
       steps {
         echo 'Build'
         sh 'id'
